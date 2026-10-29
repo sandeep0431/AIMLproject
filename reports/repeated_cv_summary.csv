@@ -1,0 +1,9 @@
+Model,Train_CV_Macro_F1,Best_Params
+Baseline Decision Tree (Raw),0.8015,default
+Tuned Decision_Tree (Eng),0.8038,"{'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+Tuned Random_Forest (Eng),0.8187,"{'class_weight': None, 'max_depth': 14, 'min_samples_leaf': 1, 'n_estimators': 200}"
+Tuned Extra_Trees (Eng),0.8117,"{'class_weight': None, 'max_depth': 16, 'min_samples_leaf': 1, 'n_estimators': 100}"
+Tuned Gradient_Boosting (Eng),0.8244,"{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 150}"
+Tuned Logistic_Regression (Eng),0.6609,"{'clf__C': 10.0, 'clf__class_weight': None}"
+Tuned SVM (Eng),0.6945,"{'clf__C': 5.0, 'clf__kernel': 'rbf'}"
+Soft Voting Ensemble (Eng),0.8263,"Ensemble of RF, ET, GBDT"

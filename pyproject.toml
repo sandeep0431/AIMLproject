@@ -1,0 +1,5 @@
+[tool.pyrefly]
+search-path = [".", "src"]
+
+[tool.pyrefly.errors]
+missing-import = "ignore"

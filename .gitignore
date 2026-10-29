@@ -1,0 +1,52 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyrefly/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+*.egg
+maternal_health_submission.zip
+*.zip
+
+# Local secrets and environment settings
+.env
+.env.*
+*.env
+secrets.json
+.streamlit/secrets.toml
+
+# Logs and local databases
+*.log
+*.sqlite3
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Preserve empty project folders
+!.gitkeep

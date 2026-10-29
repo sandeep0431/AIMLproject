@@ -1,0 +1,28 @@
+Model,Class,Precision,Recall,F1
+Baseline Decision Tree (Raw),low risk,0.9104,0.7531,0.8243
+Baseline Decision Tree (Raw),mid risk,0.7024,0.8806,0.7815
+Baseline Decision Tree (Raw),high risk,0.9615,0.9091,0.9346
+Tuned Decision Tree,low risk,0.8889,0.7901,0.8366
+Tuned Decision Tree,mid risk,0.7215,0.8507,0.7808
+Tuned Decision Tree,high risk,0.9615,0.9091,0.9346
+Tuned Random Forest,low risk,0.88,0.8148,0.8462
+Tuned Random Forest,mid risk,0.75,0.8507,0.7972
+Tuned Random Forest,high risk,0.9615,0.9091,0.9346
+Tuned Extra Trees,low risk,0.8784,0.8025,0.8387
+Tuned Extra Trees,mid risk,0.76,0.8507,0.8028
+Tuned Extra Trees,high risk,0.9259,0.9091,0.9174
+Tuned Gradient Boosting,low risk,0.9041,0.8148,0.8571
+Tuned Gradient Boosting,mid risk,0.7662,0.8806,0.8194
+Tuned Gradient Boosting,high risk,0.9623,0.9273,0.9444
+Scaled Logistic Regression,low risk,0.6667,0.8148,0.7333
+Scaled Logistic Regression,mid risk,0.5862,0.5075,0.544
+Scaled Logistic Regression,high risk,0.8478,0.7091,0.7723
+Scaled SVM (RBF),low risk,0.6522,0.9259,0.7653
+Scaled SVM (RBF),mid risk,0.7209,0.4627,0.5636
+Scaled SVM (RBF),high risk,0.9556,0.7818,0.86
+Soft Voting Ensemble,low risk,0.8767,0.7901,0.8312
+Soft Voting Ensemble,mid risk,0.7308,0.8507,0.7862
+Soft Voting Ensemble,high risk,0.9615,0.9091,0.9346
+Ordinal Cost-Sensitive (Tuned RF),low risk,0.8939,0.7284,0.8027
+Ordinal Cost-Sensitive (Tuned RF),mid risk,0.7945,0.8657,0.8286
+Ordinal Cost-Sensitive (Tuned RF),high risk,0.8438,0.9818,0.9076

@@ -1,0 +1,91 @@
+{
+  "Decision_Tree": {
+    "criterion": "gini",
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2
+  },
+  "Random_Forest": {
+    "class_weight": null,
+    "max_depth": 14,
+    "min_samples_leaf": 1,
+    "n_estimators": 200
+  },
+  "Extra_Trees": {
+    "class_weight": null,
+    "max_depth": 16,
+    "min_samples_leaf": 1,
+    "n_estimators": 100
+  },
+  "Gradient_Boosting": {
+    "learning_rate": 0.05,
+    "max_depth": 5,
+    "n_estimators": 150
+  },
+  "Logistic_Regression": {
+    "clf__C": 10.0,
+    "clf__class_weight": null
+  },
+  "SVM": {
+    "clf__C": 5.0,
+    "clf__kernel": "rbf"
+  },
+  "Random_Forest_Raw": {
+    "class_weight": null,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 100
+  },
+  "Cost_Sensitive_HighRisk_Penalty": {
+    "selected_penalty": 8.0,
+    "grid_evaluations": {
+      "0.5": {
+        "mean_high_risk_recall": 0.857,
+        "mean_macro_f1": 0.8145,
+        "composite_score": 0.84
+      },
+      "1.0": {
+        "mean_high_risk_recall": 0.8985,
+        "mean_macro_f1": 0.8161,
+        "composite_score": 0.8655
+      },
+      "2.0": {
+        "mean_high_risk_recall": 0.9124,
+        "mean_macro_f1": 0.8097,
+        "composite_score": 0.8713
+      },
+      "3.0": {
+        "mean_high_risk_recall": 0.9263,
+        "mean_macro_f1": 0.8043,
+        "composite_score": 0.8775
+      },
+      "5.0": {
+        "mean_high_risk_recall": 0.9263,
+        "mean_macro_f1": 0.7853,
+        "composite_score": 0.8699
+      },
+      "8.0": {
+        "mean_high_risk_recall": 0.9493,
+        "mean_macro_f1": 0.7705,
+        "composite_score": 0.8777
+      }
+    }
+  },
+  "Cost_Matrix": [
+    [
+      0.0,
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      0.0,
+      1.0
+    ],
+    [
+      18.0,
+      9.0,
+      0.0
+    ]
+  ]
+}

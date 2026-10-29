@@ -1,0 +1,18 @@
+Holdout metrics (stratified 80/20 split, random seed 42)
+Scores are measured on the same held-out test set.
+
+Model saved for the app: Ordinal Cost-Sensitive (Tuned RF)
+Accuracy: 0.8424 | Macro-F1: 0.8463 | High-risk recall: 0.9818
+
+Highest holdout accuracy: Tuned Gradient Boosting (0.8670)
+
+                            Model Accuracy Balanced_Accuracy Macro_Precision Macro_Recall Macro_F1 Weighted_F1 High_Risk_Recall ROC_AUC_Macro
+     Baseline Decision Tree (Raw)   0.8374            0.8476          0.8581       0.8476   0.8468      0.8400           0.9091        0.9196
+              Tuned Decision Tree   0.8424            0.8500          0.8573       0.8500   0.8507      0.8447           0.9091        0.9256
+              Tuned Random Forest   0.8522            0.8582          0.8638       0.8582   0.8593      0.8540           0.9091        0.9581
+                Tuned Extra Trees   0.8473            0.8541          0.8548       0.8541   0.8530      0.8482           0.9091        0.9683
+          Tuned Gradient Boosting   0.8670            0.8742          0.8775       0.8742   0.8737      0.8684           0.9273        0.9619
+       Scaled Logistic Regression   0.6847            0.6771          0.7002       0.6771   0.6832      0.6814           0.7091        0.8464
+                 Scaled SVM (RBF)   0.7340            0.7235          0.7762       0.7235   0.7296      0.7244           0.7818        0.8710
+             Soft Voting Ensemble   0.8424            0.8500          0.8563       0.8500   0.8507      0.8443           0.9091        0.9681
+Ordinal Cost-Sensitive (Tuned RF)   0.8424            0.8586          0.8441       0.8586   0.8463      0.8397           0.9818        0.9581

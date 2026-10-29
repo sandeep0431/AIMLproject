@@ -1,0 +1,117 @@
+﻿{
+  "dataset_source": "dataset/Maternal Health Risk Data Set.csv",
+  "raw_total_rows": 1014,
+  "raw_total_columns": 7,
+  "canonical_features": [
+    "Age",
+    "SystolicBP",
+    "DiastolicBP",
+    "BS",
+    "BodyTemp",
+    "HeartRate"
+  ],
+  "canonical_target": "RiskLevel",
+  "ordered_classes": [
+    "low risk",
+    "mid risk",
+    "high risk"
+  ],
+  "missing_values": {
+    "total_missing_cells": 0,
+    "missing_by_column": {
+      "Age": 0,
+      "SystolicBP": 0,
+      "DiastolicBP": 0,
+      "BS": 0,
+      "BodyTemp": 0,
+      "HeartRate": 0,
+      "RiskLevel": 0
+    }
+  },
+  "duplicate_analysis": {
+    "exact_duplicate_rows_total": 866,
+    "exact_redundant_rows": 562,
+    "unique_full_rows": 452,
+    "feature_duplicate_rows_total": 884,
+    "feature_redundant_rows": 598,
+    "conflicting_feature_vectors": 35,
+    "conflicting_rows_total": 215,
+    "duplicate_retention_policy": "Kept all records in default pipeline per workflow.md; reported transparently for scientific integrity. A sensitivity analysis on deduplicated data is included in ablation evaluations."
+  },
+  "class_distribution": {
+    "counts": {
+      "low risk": 406,
+      "mid risk": 336,
+      "high risk": 272
+    },
+    "proportions_pct": {
+      "low risk": 40.04,
+      "mid risk": 33.14,
+      "high risk": 26.82
+    }
+  },
+  "numeric_feature_statistics": {
+    "Age": {
+      "min": 10.0,
+      "max": 70.0,
+      "mean": 29.87,
+      "std": 13.47,
+      "median": 26.0,
+      "q25": 19.0,
+      "q75": 39.0
+    },
+    "SystolicBP": {
+      "min": 70.0,
+      "max": 160.0,
+      "mean": 113.2,
+      "std": 18.4,
+      "median": 120.0,
+      "q25": 100.0,
+      "q75": 120.0
+    },
+    "DiastolicBP": {
+      "min": 49.0,
+      "max": 100.0,
+      "mean": 76.46,
+      "std": 13.89,
+      "median": 80.0,
+      "q25": 65.0,
+      "q75": 90.0
+    },
+    "BS": {
+      "min": 6.0,
+      "max": 19.0,
+      "mean": 8.73,
+      "std": 3.29,
+      "median": 7.5,
+      "q25": 6.9,
+      "q75": 8.0
+    },
+    "BodyTemp": {
+      "min": 98.0,
+      "max": 103.0,
+      "mean": 98.67,
+      "std": 1.37,
+      "median": 98.0,
+      "q25": 98.0,
+      "q75": 98.0
+    },
+    "HeartRate": {
+      "min": 7.0,
+      "max": 90.0,
+      "mean": 74.3,
+      "std": 8.09,
+      "median": 76.0,
+      "q25": 70.0,
+      "q75": 80.0
+    }
+  },
+  "documented_units_and_ranges": {
+    "Age": "years (typical range: 10-70)",
+    "SystolicBP": "mmHg (typical range: 70-160)",
+    "DiastolicBP": "mmHg (typical range: 49-100)",
+    "BS": "mmol/L (values ~6.0-19.0 suggest blood glucose in mmol/L; fasting normal ~3.9-5.6 mmol/L, postprandial/high >7.0-11.1 mmol/L)",
+    "BodyTemp": "Fahrenheit (\u00b0F) (values ~98.0-103.0 \u00b0F; normal ~98.6 \u00b0F)",
+    "HeartRate": "beats per minute (bpm) (typical range: 60-90 bpm)"
+  }
+}
